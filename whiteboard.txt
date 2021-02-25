@@ -1,0 +1,18 @@
+99 cents - 3 quarters, 2 dimes, 4 pennies 
+
+99/ 25 = 3.96 (3 quarters) - 75 cents
+(99 - 75)/ 10 = 2.4 (2 dimes) - 20 cents
+(99 - 95) = 4 (4 pennies) - 4 cents
+
+
+Quarters
+Dimes
+Nickels
+Pennies
+
+def change maths 
+  quarters = (cents / 25).floor
+  dimes = (cents / 10).floor
+  nickes = (cents / 5).floor
+  pennies = cents - (quarters*25) - (dimes*10) - (nickels*5)
+end

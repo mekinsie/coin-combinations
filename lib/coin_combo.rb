@@ -1,18 +1,13 @@
 class Coins
   def combo(cents)
-    cents = cents*100
-    # @quarters = ""
-    # @dimes = ""
-    # @nickels = ""
-    # @pennies = ""
-    if cents % 5 == 0
-      # @nickels = "#{(cents/5).truncate} nickels."
-      "You need #{(nickels).truncate} nickels"
-    elsif cents % 5 == cents
-      "You need #{cents.truncate} pennies"
-    else
-    "You need #{(cents/5).floor.truncate} nickels and #{(cents%5).truncate} pennies."
-    end
-    # "You need #{(@nickels)} #{(@pennies)}"
-  end 
+    cents *= 100
+    75
+    quarters = (cents / 25).floor
+    dimes = ((cents - (quarters*25)) / 10).floor
+    # nickles = ((cents - dimes) / 5).floor
+    # pennies = cents - (quarters*25) - (dimes*10) - (nickels*5)
+  coins_array = [quarters, dimes]
+  # until index > 0 
+  #   "#{index}"
+  end
 end
