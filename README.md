@@ -1,38 +1,31 @@
+# _Coin Combinations_
+
+#### _Return coin combinations for inputted cent amount_
+
+#### By _**Jon Stump & Mekinsie Callahan**_
+
+## Technologies Used
+
+* Docker
+* Ruby 2.6.5
+* Rspec
+* Pry
+* VS Code
+* C8H10N4O2
+
 ## Description
+This app will allow a user to input a value as a decimal and get back the change for that value in quarters, dimes, nickels, and/or pennies.
 
-This template repository includes a basic setup for using Docker to run RSpec tests, Pry, and Ruby scripts using Ruby 2.6.5. 
+The purpose of this project is to practice writing in Ruby, TDD, unit testing and creating custom clases. 
 
-To use Docker, you will first need to [install](https://docs.docker.com/get-docker/) it. Once it's installed, Docker should be open so you can actually run Docker commands in the terminal.
+## Setup/Installation Requirements
+Ruby is required to run this application. 
 
-## Running IRB
+**Run tests using docker:**
 
-You don't need this setup for running IRB (Ruby REPL) by itself. To use IRB on its own, do the following (after Docker is installed and open):
+To use Docker, you will first need to [install](https://docs.docker.com/get-docker/) it. Once it's installed, Docker should be open so you can actually run Docker commands in the terminal.  
 
-```
-$ docker pull ruby:2.6.5
-```
-
-This pulls down the image of Ruby we use at Epicodus. You only need to do this once.
-
-Once you have it on your machine, you can run IRB with the following command:
-
-```
-$ docker run -it ruby:2.6.5 irb
-```
-
-We recommend creating an alias (called something like `dirb` for Docker IRB) to make the command easier to use.
-
-You can exit IRB as normal by typing `exit`.
-
-## Using This Repository for Docker
-
-This repository is a template repository. To use it, start by creating a new repository with `ruby-rspec-docker-container` as a template. Clone that repository down to your desktop.
-
-The repository contains a simple project that tests a simple `title_case` method. To run tests on the current code, simply run the command `docker-compose up` in the root directory of this project.
-
-To run tests on your own code, replace the `lib` and `spec` directories with your own source code (for `lib`) and tests (for `spec`).
-
-We recommend creating an alias for the following commands. The alias should look something like this:
+We recommend creating an alias for the following commands. The alias should look something like this:  
 
 ```
 dspec ()
@@ -45,12 +38,106 @@ dspec ()
 
 With this alias, the `dspec` command will automatically run RSpec tests. You can use `binding.pry` as needed.
 
-### Running Scripts
+**Run tests without Docker:**
+If you have Ruby already installed, simply type "rspec" into your terminal. This will run all of the tests that have been written for the project. 
+``` bash
+$ rspec
+```
 
-Running scripts is optional at Epicodus. However, if you want to experiment with it, follow these steps:
+## Non-Docker Instructions to run program in terminal (assuming you have Ruby already installed):
 
-* The script must be located in `lib` and be called `script.rb`.
+* Navigate to the code button on the github website.
 
+* Click on the code button to open the menu.
+
+- Copy the HTTPS code by clicking the clipboard next to the link.
+
+- Within your Bash terminal navigate to your desired location by using cd followed by your desired directory.
+```bash
+ $ cd Desktop
+``` 
+
+- Once you have chosen your desired directory use the command. This will clone the github repo into your chosen directory.
+```bash 
+$ git clone https://github.com/mekinsie/coin-combinations
+```
+
+<div 
+  style="
+    background-color: #d1ecf1; 
+    color: grey; padding: 6px; 
+    font-size: 9px; 
+    border-radius: 5px; 
+    border: 1px solid #d4ecf1; 
+    margin-bottom: 12px"
+>
+  <span 
+    style="
+      font-size: 12px; 
+      font-weight: 600; 
+      color: #0c5460;"
+  >
+    ⓘ
+  </span>
+  <span 
+    style="
+      font-size: 12px; 
+      font-weight: 900; 
+      color: #0c5460;
+      margin-bottom: 24px"
+  >
+    Note : 
+  </span> 
+  If you have any problems make sure your HTTPS code is correct! The example above might not be the most recent HTTPS code!
+</div>
+
+* Then after the process is completed use the following command. This will open the project in VSCode
+
+``` bash
+code .
+```
+
+* Install gem bundler by typing:
+
+``` bash
+gem install bundler
+```
+* Install gem bundles by typing:
+
+``` bash
+bundle
+```
+
+* You can run this project in your terminal by typing:
+
+```bash
+ruby "file goes here (no quotes)"
+```
+
+### Running Scripts in Docker
 * Run the following command: `docker-compose run --rm app ruby lib/script.rb`.
 
 Once again, we recommend aliasing this command if you plan to run scripts often. If you prefer to name your script something else, you just need to update the command to use the correct path and file name.
+
+
+
+* * *
+## Known Bugs
+
+* No known bugs
+* * *
+
+## Addition comments:
+* Created on 2/25/21
+
+
+* * *
+
+## Contact Information
+_Mekinsie Callahan: [Email](mekinsie.aja@gmail.com)_ \
+_Jon Stump: [Email](jmstump@gmail.com)_
+* * *
+
+## License
+> [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)\
+> Jon Stump, Mekinsie Callahan &copy; 2021
