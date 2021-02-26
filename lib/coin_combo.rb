@@ -19,7 +19,7 @@ class Coins
     total_change_array.join(", ")
   end
 
-  # private
+  private
     def change_calc(cents)
       cents *= 100
       quarters = (cents / 25).floor
