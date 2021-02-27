@@ -1,4 +1,4 @@
-#! usr/bin/env ruby
+#!/usr/bin/env ruby
 require_relative("coin_combo.rb")
 
 puts "Welcome to the coin combination app!"
